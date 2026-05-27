@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__logo">
+        <span class="sidebar__logo-main">PARTNERS</span>
+        <span class="sidebar__logo-sub"><em>u</em>NEED GROUP</span>
+      </div>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-list">
+
+          <li class="sidebar__nav-item sidebar__nav-item--active">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph-fill ph-house"></i></span>
+              <span class="sidebar__nav-label">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-currency-circle-dollar"></i></span>
+              <span class="sidebar__nav-label">Investments</span>
+            </a>
+          </li>
+
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-user"></i></span>
+              <span class="sidebar__nav-label">Career</span>
+            </a>
+          </li>
+
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-wallet"></i></span>
+              <span class="sidebar__nav-label">Wallet</span>
+            </a>
+          </li>
+
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-newspaper"></i></span>
+              <span class="sidebar__nav-label">News</span>
+            </a>
+          </li>
+          <li class="sidebar__nav-item sidebar__nav-item--has-sub">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-user-circle"></i></span>
+              <span class="sidebar__nav-label">Settings</span>
+              <span class="sidebar__nav-arrow"><i class="ph ph-caret-down"></i></span>
+            </a>
+          </li>
+
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">
+              <span class="sidebar__nav-icon"><i class="ph ph-headset"></i></span>
+              <span class="sidebar__nav-label">Support</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="sidebar__logout">
+        <a href="#" class="sidebar__logout-link">
+          <span class="sidebar__logout-icon"><i class="ph ph-sign-out"></i></span>
+          <span class="sidebar__logout-label">Log Out</span>
+        </a>
+      </div>
+
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar__left">
+          <button class="topbar__hamburger" aria-label="Menu">
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+
+        <div class="topbar__center">
+          <div class="topbar__dropdown">
+            <span>USD</span>
+            <i class="ph ph-caret-down"></i>
+          </div>
+          <div class="topbar__dropdown">
+            <span>Eng</span>
+            <i class="ph ph-caret-down"></i>
+          </div>
+        </div>
+
+        <div class="topbar__right">
+          <button class="topbar__icon-btn" aria-label="Toggle theme">
+            <i class="ph ph-moon"></i>
+          </button>
+
+          <button class="topbar__icon-btn topbar__icon-btn--notif" aria-label="Notifications">
+            <i class="ph ph-bell"></i>
+            <span class="topbar__badge">1</span>
+          </button>
+
+          <div class="topbar__user">
+            <span class="topbar__user-name">Joao Ferraz</span>
+            <div class="topbar__avatar">
+              <img
+                src="https://avatars.githubusercontent.com/u/255976008?v=4"
+                alt="Joao Ferraz"
+              />
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+
+      <main class="content">
+        <div class="content__header">
+          <h1 class="content__title">Welcome, <span>Ferraz</span></h1>
+          <div class="content__date-filter">
+            <i class="ph-fill ph-calendar-blank"></i>
+            <span>Last month</span>
+            <i class="ph ph-caret-down"></i>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="card card--rank">
+            <button class="card__help" aria-label="Help"><i class="ph ph-question"></i></button>
+
+            <div class="rank__avatar-wrapper">
+              <div class="rank__avatar-ring">
+                <div class="rank__avatar">
+                  <i class="ph-fill ph-shield-star"></i>
+                </div>
+              </div>
+              <div class="rank__badge">Newbie</div>
+            </div>
+
+            <div class="rank__task-row rank__task-row--main">
+              <div class="rank__task-icon rank__task-icon--gold">
+                <i class="ph-fill ph-trophy"></i>
+              </div>
+              <div class="rank__task-info">
+                <span class="rank__task-title">It remains to execute</span>
+                <span class="rank__task-sub">3 tasks</span>
+              </div>
+              <span class="rank__task-pct">34%</span>
+            </div>
+
+            <div class="rank__next-row">
+              <span class="rank__next-label">Next rank</span>
+              <span class="rank__next-value">Professional</span>
+            </div>
+
+            <div class="rank__subtasks">
+
+              <div class="rank__subtask">
+                <div class="rank__subtask-icon">
+                  <i class="ph-fill ph-users-three"></i>
+                </div>
+                <div class="rank__subtask-info">
+                  <span class="rank__subtask-title">Invite 9 people to the system</span>
+                  <span class="rank__subtask-sub">3 invited</span>
+                </div>
+                <span class="rank__subtask-pct">34%</span>
+              </div>
+
+              <div class="rank__subtask">
+                <div class="rank__subtask-icon rank__subtask-icon--purple">
+                  <i class="ph-fill ph-chart-line-up"></i>
+                </div>
+                <div class="rank__subtask-info">
+                  <span class="rank__subtask-title">Generate a turnover of $12,000</span>
+                  <span class="rank__subtask-sub">9,930$</span>
+                </div>
+                <span class="rank__subtask-pct">82%</span>
+              </div>
+
+              <div class="rank__subtask">
+                <div class="rank__subtask-icon rank__subtask-icon--blue">
+                  <i class="ph-fill ph-building-apartment"></i>
+                </div>
+                <div class="rank__subtask-info">
+                  <span class="rank__subtask-title">Invest in hostels 2 times</span>
+                  <span class="rank__subtask-sub">1 ready</span>
+                </div>
+                <span class="rank__subtask-pct">50%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-column">
+            <div class="stats-row">
+
+              <div class="stat-card">
+                <div class="stat-card__icon">
+                  <i class="ph ph-users"></i>
+                </div>
+                <span class="stat-card__label">Earnings from partners</span>
+                <span class="stat-card__value">$1,340</span>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-card__icon">
+                  <i class="ph ph-wallet"></i>
+                </div>
+                <span class="stat-card__label">Earnings from investments</span>
+                <span class="stat-card__value">$12,340</span>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-card__icon">
+                  <i class="ph ph-currency-dollar"></i>
+                </div>
+                <span class="stat-card__label">Total earned</span>
+                <span class="stat-card__value">$1,340</span>
+              </div>
+
+            </div>
+
+            <div class="event-banner">
+              <div class="event-banner__bg"></div>
+              <div class="event-banner__avatars">
+                <img src="https://i.pravatar.cc/30?img=5" alt="user" />
+                <img src="https://i.pravatar.cc/30?img=9" alt="user" />
+              </div>
+
+              <div class="event-banner__body">
+                <h2 class="event-banner__title">Dubai Design Week 2020</h2>
+                <p class="event-banner__date">January 12, 2020</p>
+                <button class="event-banner__btn">More info</button>
+              </div>
+            </div>
+
+            <div class="events-list">
+
+              <div class="event-item">
+                <div class="event-item__thumb">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=56&h=56&fit=crop&auto=format" alt="Dubai Design Week" />
+                </div>
+                <div class="event-item__info">
+                  <span class="event-item__title">Dubai Design Week 2020</span>
+                </div>
+                <div class="event-item__meta">
+                  <span class="event-item__date">DEC 12, 2020, 09:40</span>
+                  <span class="event-item__time">14:00</span>
+                </div>
+              </div>
+
+              <div class="event-item">
+                <div class="event-item__thumb">
+                  <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=56&h=56&fit=crop&auto=format" alt="Business Forum Bukovel" />
+                </div>
+                <div class="event-item__info">
+                  <span class="event-item__title">Business Forum Bukovel</span>
+                </div>
+                <div class="event-item__meta">
+                  <span class="event-item__date">DEC 11, 2020, 09:40</span>
+                  <span class="event-item__check"><i class="ph ph-check"></i></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <button class="fab-chat" aria-label="Chat">
+    <i class="ph-fill ph-chat-circle-dots"></i>
+  </button>
+
+</body>
+</html>
